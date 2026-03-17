@@ -1,38 +1,344 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h1 {
+  font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 90px;
+leading-trim: NONE;
+line-height: 105px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(82, 82, 82, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h4 {
+  font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(82, 82, 82, 1);
+}
+
+.form-control {
+ font-family: Satoshi;
+font-weight: 500;
+font-style: Medium;
+font-size: 30px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(82, 82, 82, 0.8);
+}
+p {
+  font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 43px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(138, 133, 133, 1);
+}
+span {
+    color: rgba(58, 142, 246, 1);
+}
+.healthyme-title{
+  position: relative;
+  display: inline-block;
+}
+
+.navbar h1{
+    font-size: 43.22px;
+    color: rgba(58, 142, 246, 1);
   }
+.plus-icon{
+  position: absolute;
+  top: 0px;
+  right: -27px;
+  width: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar a {
+  font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 25.38px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(64, 64, 64, 1);
+text-decoration: none;
+}
+.navbar a:hover{
+  color: rgba(58, 142, 246, 1);
+  text-decoration: underline;
+  
+}
+.navbar-toggler {
+  transition: background-color 0.3s ease; /* smooth transition */
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(58, 142, 246, 1);
+}
+
+
+.navbar-toggler-icon {
+  transition: all 0.3s ease; 
+}
+
+.navbar-toggler:hover .navbar-toggler-icon:hover {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar .btn {
+   padding: 5px 30px;
+   border-radius: 12px;
+}
+.Hero-Section {
+  padding: 50px 0;
+}
+.Hero-Section .health{
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: border-color 0.4s ease;
+  width: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Hero-Section .health h4,
+.Hero-Section .health img{
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
 }
+
+.Hero-Section .health::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 120, 242, 1);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.Hero-Section .health:hover::before{
+  left: 0;
+}
+
+.Hero-Section .health:hover{
+  border-color: rgba(22, 120, 242, 1);
+}
+
+.Hero-Section .health:hover h4{
+  color: white;
+}
+.Hero-Section .justify-content-lg-center {
+  width: 80%;
+}
+.Hero-Section .serchbar {
+  border-radius: 50px;
+  width: 75%;
+}
+
+
+.Hero-Section .align-items-lg-center {
+  display: flex ;
+  align-items: center ;
+}
+.Hero-Section .align-items-lg-center img {
+  width: 470px;
+  height:500px;
+}
+.features-section {
+  background-color: #f5f5ff;
+}
+
+.features-small-title {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 23%;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.features-main-title {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 53px;
+  line-height: 95px;
+  margin-bottom: 20px;
+}
+
+.features-main-title span {
+  display: inline-block;
+}
+
+.features-description {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 43px;
+  color: rgba(138, 133, 133, 1);
+  margin-bottom: 40px;
+}
+
+.feature-item svg {
+  color: #000;
+}
+.Features-Section .pt-5 {
+  margin-top: 150px;
+}
+.feature-title {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 21px;
+  line-height: 30px;
+  margin-top: 15px;
+ color: rgba(0, 0, 0, 1);
+}
+.Features-Section p {
+    font-size: 25px;
+    line-height: 30px;
+}
+.Features-Section {
+ background-color: rgb(243, 243, 253) !important;
+}
+.heart-img {
+  position: relative;
+  top: 3px;
+  left: 20px; 
+}
+@media only screen and (max-width: 1200px){
+.features-main-title{
+  font-size: 44px;
+  line-height: 70px;
+}
+.Features-Section p {
+    font-size: 20px;
+    line-height: 25px;
+}
+}
+@media only screen and (max-width: 1024px){
+  h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+   h4 {
+font-size: 30px;
+}
+p {
+  font-size: 28px;
+}
+.navbar a {
+    font-size: 22px;
+}
+}
+@media only screen and (max-width: 992px){
+     h1 {
+        font-size: 54px;
+        line-height: 70px;
+    } 
+    .features-small-title{
+      font-size: 15px;
+    }
+    .features-main-title {
+        font-size: 33px;
+        line-height: 50px;
+    }
+    .feature-title{
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .Features-Section p {
+    font-size: 16px;
+    }
+}
+@media only screen and (max-width: 768px) {
+   h1 {
+    font-size: 50px;
+    line-height: 60px;
+
+  }
+  h4 {
+font-size: 28px;
+}
+p {
+  font-size: 22px;
+  line-height: 38px;
+}
+.navbar a {
+    font-size: 20px;
+}
+   .navbar h1 {
+     font-size: 30px;
+   }
+   .navbar a {
+     font-size: 18px;
+   }
+   .navbar img {
+    width: 50px
+   }
+   .plus-icon {
+    top: -9px;
+   }
+   .Hero-Section {
+    padding: 30px 0;
+   }
+    .Features-Section .pt-5{
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+  @media only screen and (max-width: 480px){
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    h4 {
+     font-size: 24px;
+     line-height: 30px;
+    }
+    p {
+  font-size: 18px;
+  line-height: 32px;
+}
+    .Hero-Section .health img {
+      width: 15%;
+    }
+    .Hero-Section .health  {
+      width: 100%;
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+    }
+    .plus-icon {
+      top: -13px;
+    }
+    .Hero-Section .align-items-lg-center img {
+    width: 415px;
+    height: 376px;
+}
+  }
