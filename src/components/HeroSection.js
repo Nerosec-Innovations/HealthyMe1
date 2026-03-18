@@ -1,7 +1,7 @@
 import React from "react";
-import vector from "../images/Vector.png";
+import vector from "../assets/images/Vector.png";
 import SearchBar from "./Searchbar";
-import hero from "../images/hero.png";
+import hero from "../assets/images/hero.png";
 export default function HeroSection() {
   return (
     <div>

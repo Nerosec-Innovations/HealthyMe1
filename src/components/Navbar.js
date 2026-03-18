@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import logo from "../images/logo.svg"
-import h1 from "../images/h1.png"
+import logo from "../assets/images/logo.svg"
+import h1 from "../assets/images/h1.png"
 
 export default function Navbar() {
   const [showSearch, setShowSearch] = useState(false);

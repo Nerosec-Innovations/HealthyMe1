@@ -5,20 +5,19 @@ import { Autoplay, Grid } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/grid";
 
-import img1 from "../images/burger.png";
-import img2 from "../images/cake.png";
-import img3 from "../images/chicken.png";
-import img4 from "../images/deal.png";
-import img5 from "../images/donut.png";
-import img6 from "../images/fruits.png";
-import img7 from "../images/icecream.png";
-import img8 from "../images/pizza.png";
-import img9 from "../images/pizza-slice.png";
-import img10 from "../images/tomatto.png";
+import img1 from "../assets/images/burger.png";
+import img2 from "../assets/images/cake.png";
+import img3 from "../assets/images/chicken.png";
+import img4 from "../assets/images/deal.png";
+import img5 from "../assets/images/donut.png";
+import img6 from "../assets/images/fruits.png";
+import img7 from "../assets/images/icecream.png";
+import img8 from "../assets/images/pizza.png";
+import img9 from "../assets/images/pizza-slice.png";
+import img10 from "../assets/images/tomatto.png";
 
 export default function Slider() {
 
-  // 🔥 Important: duplicate data for smooth infinite loop
   const data = [
     { img: img1, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
     { img: img2, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
@@ -32,19 +31,17 @@ export default function Slider() {
     { img: img10, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
   ];
 
-  const loopData = [...data, ...data]; // 👈 IMPORTANT
+  const loopData = [...data, ...data];
 
   return (
     <div className="Slider-Section">
       <div className="container">
         
-        {/* Titles */}
         <div className="d-flex flex-column gap-2 mb-4">
           <h4 className="slider-small-title">Help Topics</h4>
           <h2 className="slider-main-title">Enhance Your Lifestyle</h2>
         </div>
 
-        {/* Swiper */}
         <Swiper
           modules={[Autoplay, Grid]}
           

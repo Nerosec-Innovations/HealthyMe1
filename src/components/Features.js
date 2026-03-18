@@ -1,9 +1,9 @@
 import React from "react";
 import { FaUtensils, FaRobot, FaChartBar } from "react-icons/fa";
-import HeartRate from "../images/HeartRate.png";
-import diet from "../images/diet.png";
-import stats from "../images/stats.png";
-import chatbot from "../images/chatbot.png";
+import HeartRate from "../assets/images/HeartRate.png";
+import diet from "../assets/images/diet.png";
+import stats from "../assets/images/stats.png";
+import chatbot from "../assets/images/chatbot.png";
 
 export default function FeaturesSection() {
   return (
