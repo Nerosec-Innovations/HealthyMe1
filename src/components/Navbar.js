@@ -44,7 +44,7 @@ export default function Navbar() {
               <li className="nav-item"><a className="nav-link" href="#">About Us</a></li>
               <li className="nav-item"><a className="nav-link" href="#">How To Use</a></li>
             </ul>
-            <button className="btn btn-primary">Login</button>
+            <button className="btn btn-primary" to="login.html">Login</button>
           </div>
         </div>
 
