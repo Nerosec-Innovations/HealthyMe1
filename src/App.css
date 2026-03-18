@@ -52,6 +52,10 @@ color: rgba(138, 133, 133, 1);
 span {
     color: rgba(58, 142, 246, 1);
 }
+.navbar{
+    background: rgb(243, 243, 253);
+
+}
 .healthyme-title{
   position: relative;
   display: inline-block;
@@ -106,6 +110,7 @@ text-decoration: none;
 }
 .Hero-Section {
   padding: 50px 0;
+  background: rgb(243, 243, 253);
 }
 .Hero-Section .health{
   border-radius: 50px;
@@ -231,6 +236,7 @@ text-decoration: none;
 }
 .Slider-Section {
   padding: 50px 0;
+  background: rgb(243, 243, 253);
 }
 .Slider-Section .slider-small-title {
   font-family: 'Satoshi', sans-serif;
