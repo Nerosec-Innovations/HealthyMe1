@@ -85,7 +85,7 @@ text-decoration: none;
   
 }
 .navbar-toggler {
-  transition: background-color 0.3s ease; /* smooth transition */
+  transition: background-color 0.3s ease; 
 }
 
 .navbar-toggler:hover {
