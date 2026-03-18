@@ -8,7 +8,6 @@ h1 {
 font-weight: 700;
 font-style: Bold;
 font-size: 90px;
-leading-trim: NONE;
 line-height: 105px;
 letter-spacing: 0%;
 vertical-align: middle;
@@ -20,7 +19,6 @@ h4 {
 font-weight: 700;
 font-style: Bold;
 font-size: 32px;
-leading-trim: NONE;
 line-height: 100%;
 letter-spacing: 0%;
 vertical-align: middle;
@@ -32,7 +30,6 @@ color: rgba(82, 82, 82, 1);
 font-weight: 500;
 font-style: Medium;
 font-size: 30px;
-leading-trim: NONE;
 line-height: 100%;
 letter-spacing: 0%;
 vertical-align: middle;
@@ -43,7 +40,6 @@ p {
 font-weight: 700;
 font-style: Bold;
 font-size: 32px;
-leading-trim: NONE;
 line-height: 43px;
 letter-spacing: 0%;
 vertical-align: middle;
@@ -54,7 +50,6 @@ span {
 }
 .navbar{
     background: rgb(243, 243, 253);
-    padding: 0;
 
 }
 .healthyme-title{
@@ -414,5 +409,9 @@ p {
     .Hero-Section .align-items-lg-center img {
     width: 415px;
     height: 376px;
+}
+.Features-Section .features-description {
+  font-size: px;
+  line-height: 30px;
 }
   }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import logo from "../assets/images/logo.svg"
 import h1 from "../assets/images/h1.png"
+import { FaPlus, FaMicrophone, FaSearch } from "react-icons/fa";
+
 
 export default function Navbar() {
   const [showSearch, setShowSearch] = useState(false);
@@ -49,13 +51,31 @@ export default function Navbar() {
         </div>
 
         {showSearch && (
-          <div className="container mt-2 d-md-none">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Search here..."
-            />
-          </div>
+          <div className="d-flex  d-md-none align-items-center bg-white shadow-sm rounded-pill p-2 mt-2" style={{ maxWidth: "500px" }}>
+                <input
+                  type="text"
+                  placeholder="Search your product"
+                  className="form-control border-0 me-2"
+                  style={{ flex: 1 }}
+                />
+          
+                <div className="d-flex align-items-center gap-2">
+                  <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" 
+                       style={{ width: "40px", height: "40px", cursor: "pointer" }}>
+                    <FaPlus />
+                  </div>
+          
+                  <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" 
+                       style={{ width: "40px", height: "40px", cursor: "pointer" }}>
+                    <FaMicrophone />
+                  </div>
+          
+                  <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" 
+                       style={{ width: "40px", height: "40px", cursor: "pointer" }}>
+                    <FaSearch />
+                  </div>
+                </div>
+              </div>
         )}
       </nav>
     </div>
