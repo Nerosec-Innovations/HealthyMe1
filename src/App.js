@@ -4,6 +4,7 @@ import FeaturesSection from './components/Features';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import Slider from './components/Slider';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HeroSection/>
       <FeaturesSection/>
       <Slider/>
+      <Footer/>
     </div>
   );
 }

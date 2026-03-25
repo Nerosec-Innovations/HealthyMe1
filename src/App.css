@@ -288,6 +288,83 @@ text-decoration: none;
 .Slider-Section .swiper-slide:hover {
   transform: translateY(-10px);
 }
+.footer-section {
+  background-color: #f5f5ff;
+}
+
+.logo-text {
+  font-family: Satoshi, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #4a6cf7;
+}
+
+.footer-desc {
+  font-family: Satoshi;
+font-weight: 400;
+font-size: 21.59px;
+line-height: 35.99px;
+letter-spacing: 0%;
+
+  margin: 15px 0;
+}
+
+.footer-title {
+  font-family: Satoshi, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  font-size: 21px;
+  color: rgba(79, 85, 90, 1);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: #4a6cf7;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  color: #4a6cf7;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #000;
+}
+
+.footer-bottom  {
+  border-top: 1px solid #ddd;
+  background-color: #f5f5ff;
+  font-family: Satoshi;
+font-weight: 400;
+font-size: 21.59px;
+line-height: 35.99px;
+letter-spacing: 0%;
+
+}
+
+.footer-bottom .link {
+  color: #4a6cf7;
+  cursor: pointer;
+}
+
+.footer-bottom .link {
+  text-decoration: underline;
+}
+.footer-section .plus-icon {
+  left: 35%;
+  top: -25px;
+}
 @media only screen and (max-width: 1200px){
 .Features-Section .features-main-title{
   font-size: 44px;
@@ -347,7 +424,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
    h1 {
-    font-size: 50px;
+    font-size: 44px;
     line-height: 60px;
 
   }
@@ -376,10 +453,21 @@ p {
    .Hero-Section {
     padding: 30px 0;
    }
+   .Hero-Section .shadow-sm {
+    max-width: 360px !important;
+   }
+   .Hero-Section .form-control {
+    font-size: 20px;
+   }
+   .Hero-Section .align-items-lg-center img {
+    width: 350px;
+    height: 300px;
+   }
     .Features-Section .pt-5{
       margin-top: 0;
       padding-top: 0;
     }
+    
   }
   @media only screen and (max-width: 480px){
     h1 {
