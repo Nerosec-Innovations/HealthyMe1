@@ -2,7 +2,7 @@ import React from "react";
 import vector from "../assets/images/Vector.png";
 import SearchBar from "./Searchbar";
 import hero from "../assets/images/hero.png";
-export default function HeroSection() {
+export default function HeroSection({ onSearch, searchPerformed, searchResultCount }) {
   return (
     <div>
       <section className="Hero-Section pt-5">
@@ -24,7 +24,14 @@ export default function HeroSection() {
                     <p>Using your BMI index we calculate whether the dish is suitable for you.</p>
                  </div>
               </div>
-              <SearchBar />
+              <SearchBar onSearch={onSearch} />
+              {searchPerformed && (
+                <div className="alert alert-info mt-3" role="alert">
+                  {searchResultCount > 0
+                    ? `${searchResultCount} product${searchResultCount > 1 ? 's' : ''} found.`
+                    : 'Product not found.'}
+                </div>
+              )}
             </div>
               <div className="col-md-4">
                 <figure className="d-flex justify-content-md-center align-items-lg-center">

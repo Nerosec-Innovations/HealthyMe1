@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Grid } from "swiper/modules";
+import { Link } from 'react-router-dom';
 
 import "swiper/css";
 import "swiper/css/grid";
@@ -16,21 +17,10 @@ import img8 from "../assets/images/pizza.png";
 import img9 from "../assets/images/pizza-slice.png";
 import img10 from "../assets/images/tomatto.png";
 
-export default function Slider() {
+import { products as allProducts } from "../data/products";
 
-  const data = [
-    { img: img1, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img2, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img3, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img4, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img5, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img6, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img7, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img8, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img9, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-    { img: img10, title: "Product Name", description: "Lorem ipsum amet dolor, etit tu" },
-  ];
-
+export default function Slider({ products }) {
+  const data = products && products.length > 0 ? products : allProducts;
   const loopData = [...data, ...data];
 
   return (
@@ -72,13 +62,15 @@ export default function Slider() {
         >
           {loopData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="slider-card">
-                <img src={item.img} alt="" />
-                <h5>{item.title}</h5>
-                <div className="description">
-                  <h6>{item.description}</h6>
+              <Link to={`/product/${index}`} state={item} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <div className="slider-card">
+                  <img src={item.img} alt="" />
+                  <h5>{item.title}</h5>
+                  <div className="description">
+                    <h6>{item.description}</h6>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
