@@ -1,0 +1,334 @@
+.form-control {
+ font-family: Satoshi;
+font-weight: 500;
+font-style: Medium;
+font-size: 30px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(82, 82, 82, 0.8);
+}
+p {
+  font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 43px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(138, 133, 133, 1);
+}
+span {
+    color: rgba(58, 142, 246, 1);
+}
+.healthyme-title{
+  position: relative;
+  display: inline-block;
+}
+
+.navbar h1{
+    font-size: 43.22px;
+    color: rgba(58, 142, 246, 1);
+  }
+.plus-icon{
+  position: absolute;
+  top: 0px;
+  right: -19px;
+  width: 35px;
+}
+
+.navbar a {
+  font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 25.38px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(64, 64, 64, 1);
+text-decoration: none;
+}
+.navbar a:hover{
+  color: rgba(58, 142, 246, 1);
+  text-decoration: underline;
+  
+}
+.navbar-toggler {
+  transition: background-color 0.3s ease; /* smooth transition */
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(58, 142, 246, 1);
+}
+
+
+.navbar-toggler-icon {
+  transition: all 0.3s ease; 
+}
+
+.navbar-toggler:hover .navbar-toggler-icon:hover {
+  color: white;
+}
+.navbar .btn {
+   padding: 5px 30px;
+   border-radius: 12px;
+}
+@media only screen and (max-width: 480px) {
+  .navbar-brand img{
+   width: 50px;
+  }
+  .healthyme-title h1{
+    font-size: 30px;
+  }
+  .plus-icon{
+  position: absolute;
+  top: 0px;
+  right: -19px;
+  width: 28px;
+}
+}
+@media only screen and (max-width: 1024px){
+  h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+   h4 {
+font-size: 30px;
+}
+p {
+  font-size: 28px;
+}
+.navbar a {
+    font-size: 22px;
+}
+    
+}
+@media only screen and (max-width: 992px){
+     h1 {
+        font-size: 54px;
+        line-height: 70px;
+    } 
+
+    .navbar-expand-lg .navbar-collapse {
+        flex-basis: 100% !important;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        flex-basis: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+   h1 {
+    font-size: 50px;
+    line-height: 60px;
+
+  }
+  h4 {
+font-size: 28px;
+}
+p {
+  font-size: 22px;
+  line-height: 38px;
+}
+.navbar a {
+    font-size: 20px;
+}
+   .navbar h1 {
+     font-size: 30px;
+   }
+   .navbar a {
+     font-size: 18px;
+   }
+   .navbar img {
+    width: 50px
+   }
+   .plus-icon {
+    top: -9px;
+   }
+    
+  }
+
+  /* Regiter section css */
+
+  .register h4 a{
+    text-decoration: none;
+  }
+  .register input:focus-visible {
+    border: none;
+  }
+  /* .card-box {
+      max-width: 350px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    } */
+
+    .form-control {
+      background: #f1f3f5;
+      border: none;
+      border-radius: 10px;
+      height: 45px;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      background: #f1f3f5;
+    }
+
+    .input-group-text {
+      background: #f1f3f5;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .btn-custom {
+      background: linear-gradient(90deg, #4e73df, #3b5bdb);
+      color: #fff;
+      border-radius: 10px;
+      height: 45px;
+      border: none;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 15px 0;
+      color: #aaa;
+      font-size: 12px;
+    }
+
+    .social-btns button {
+      width: 30%;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      background: #fff;
+    }
+    .social-btns button:hover{
+      background: white;
+      color: blue;
+
+    }
+    ::placeholder{
+      font-size: 20px;
+    }
+   
+    /* Dark mode  */
+    /* Default Light Mode */
+body {
+  background: #f3f4f6;
+  color: #000;
+  transition: 0.3s;
+}
+
+.card-box {
+  background: #fff;
+  transition: 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: #fff;
+}
+
+.dark-mode .card-box {
+  background: #1e1e1e;
+}
+
+.dark-mode .form-control {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.dark-mode .form-control::placeholder {
+  color: #aaa;
+}
+
+.dark-mode a {
+  color: #9aaeff;
+}
+
+/* login page  */
+
+body {
+  background: #f3f4f7;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  color: #4a6cf7;
+  font-weight: bold;
+}
+
+.nav-link {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Image box */
+.image-box {
+  border: 2px dashed #ccc;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.image-box img {
+  border-radius: 10px;
+}
+
+/* Card */
+.custom-card {
+  border-radius: 15px;
+  border: 2px solid #6ea8fe;
+  background: #fff;
+}
+
+/* Nutrients */
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+.bg-orange {
+  background: orange;
+}
+
+.bg-pink {
+  background: #ff2e93;
+}
+
+.bg-green {
+  background: #7bc043;
+}
+
+/* Alternative images */
+.alt-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alt-img:hover {
+  transform: scale(1.1);
+}
